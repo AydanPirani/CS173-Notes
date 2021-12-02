@@ -1,0 +1,217 @@
+\subsection{A Bit About Style}
+Writing math has two requirements:
+\begin{itemize}
+    \item Logical Flow of Ideas
+    \item Express Yourself Fluently
+\end{itemize}
+
+\subsection{Propositions}
+\begin{itemize}
+    \item \hl{Proposition}: A statement that can be true or false, but not both.
+    \item Doesn't deal with variables or complexity, MUST be predefined.
+    \item Eg. "$1 < 2$" (never changes from true to false)
+\end{itemize}
+
+\subsection{Complex Propositions}
+\subsubsection{Chaining Propositions}
+\begin{itemize}
+    \item Can join propositions to get more complex statements that evaluate to true or false.
+    \item Eg. "$1<2$ and Chicago is in Illinois".
+\end{itemize}
+
+\subsubsection{Mathematical Notation}
+We can manipulate propositions using operators like "not", and we can join propositions using operators like "and"/"or".
+We also have the following mathematical abbreviations for the following operators:
+\begin{itemize}
+    \item and: $\land$
+    \item or: $\lor$
+    \item not: $\neg$
+\end{itemize}
+
+\subsubsection{Truth Tables}
+We can use truth tables to show the outcome of manipulating propositions. Here's a truth table for the "not" operator:
+
+\vspace{1em}
+\begin{tabular}{c|c}
+    A & $\neg A$ \\
+    \hline
+    T & F \\ 
+    F & F \\
+\end{tabular}
+\vspace{1em}
+
+Here's another truth table for the results of using and/or on two propositions.
+
+\vspace{1em}
+\begin{tabular}{c|c|c|c}
+    A & B & $A \land B$ & $A \lor B$ \\
+    \hline
+    T & T & T & T \\
+    T & F & F & T \\
+    F & T & F & T \\
+    F & F & F & F
+\end{tabular}
+\vspace{1em}
+
+Note that the "or" statement is not exclusive - if both of its inputs are true, then the output is also true. In the context of a single exclusive or, there exists an operator called "exclusive or"(XOR).
+
+\subsection{Implication}
+\begin{itemize}
+    \item Can join propositions into an "if A, then B" statement.
+    \item Also verbalized as "A implies B".
+    \item Mathematical notation for this: $A \rightarrow B$.
+    \item Can also be represented as: $\neg A \lor B$ (not A or B).
+\end{itemize}
+
+Here's the truth table for implication:
+
+\vspace{1em}
+\begin{tabular}{c|c|c}
+    A & B & $A \rightarrow B$\\
+    \hline
+    T & T & T \\
+    T & F & F \\
+    F & T & T \\
+    F & F & F \\
+\end{tabular}
+\vspace{1em}
+
+Note that B's value is only called in if A is true - if A is false, then $A \rightarrow B$ automatically is TRUE.
+
+\subsection{Converse, Contrapositive, Biconditional}
+All three of these operate based on the implies statement.
+
+\subsubsection{Converse}
+The converse of $A\rightarrow B$ is $B\rightarrow A$. To find the converse:
+\begin{enumerate}
+    \item Find the proposition chains A and B within the original statement.
+    \item Flip B and A, and place the "implies" sign in between.
+\end{enumerate}
+
+NOTE THAT THE CONVERSE OF A STATEMENT IS NOT EQUAL TO THE ORIGINAL STATEMENT.
+
+\subsubsection{Biconditional}
+If a problem says "A implies B, and conversely", then this means: $A \rightarrow B \land B \rightarrow A$, which is equivalent to $A \leftrightarrow B$. Here's a truth table for the bidirectional operator:
+
+\vspace{1em}
+\begin{tabular}{c|c|c|c|c}
+    A & B & $A \rightarrow B$ & $B \rightarrow A$ & $A\leftrightarrow B$ \\
+    \hline
+    T & T & T & T & T \\
+    T & F & F & T & F \\
+    F & T & T & F & F \\
+    F & F & T & T & T \\
+\end{tabular}
+\vspace{1em}
+
+Note that in the case of a biconditional relationship, the converse of a statement is equivalent to the original statement.
+
+\subsubsection{Contrapositive}
+The contrapositive of $A\rightarrow B$ is $\neg B \rightarrow \neg A$. To find the contrapositive:
+\begin{enumerate}
+    \item Find the proposition chains A and B within the original statement.
+    \item Negate both predicates (A and B).
+    \item Flip the negations of B and A, and place the "implies" sign in between.
+\end{enumerate}
+Note that the contrapositive of a statement is equal to the original statement.
+
+\subsection{Complex Statements}
+\begin{itemize}
+    \item Can combine longer propositions to achieve chains, works the same way. 
+    \item Order of operations: parentheses, not, and/or, implications.
+    \item Can also build truth tables, but lot of work as we need more variables.
+\end{itemize}
+
+\subsection{Logical Equivalence}
+\begin{itemize}
+    \item \hl{Logically Equivalent}: values of two propositions A and B are equal for all possible input values.
+    \item Denoted mathematically with $\equiv$
+    \item Can get to it via truth tables or simplification.
+\end{itemize}
+
+\subsubsection{DeMorgan's Laws}
+Set of laws regarding boolean algebra:
+\begin{itemize}
+    \item $\neg(A \lor B) \equiv \neg A \land \neg B$
+    \item $\neg(A \land B) \equiv \neg A \lor \neg B$
+    \item $A \land \neg A \equiv \text{False}$
+\end{itemize}
+
+\subsection{Some Useful Logical Equivalences}
+
+\subsubsection{Commutative Rules}
+\begin{itemize}
+    \item $A \land B \equiv B \land A$
+    \item $A \lor B \equiv B \lor A$
+\end{itemize}
+
+\subsubsection{Distributive Rules}
+\begin{itemize}
+    \item $A \land (B \land C) \equiv A \land B \land C $
+    \item $A \lor (B \lor C) \equiv A \lor B \lor C $
+    \item $A \land (B \lor C) \equiv (A \land B) \lor (A \land C) $
+    \item $A \lor (B \land C) \equiv (A \lor B) \land (A \lor C) $
+\end{itemize}
+
+\subsection{Negating Propositions}
+To negate propositons:
+\begin{enumerate}
+    \item Convert English text into mathematical notation.
+    \item Perform the negation on the implication.
+    \item Convert the mathematical negation back into plain English.
+\end{enumerate}
+Note that this is dependent on the negation of the implies: $\neg(A \rightarrow B) \equiv A \land \neg B$
+
+\subsection{Predicates and Variables}
+\begin{itemize}
+    \item Predicate: A statement that takes on a T/F value based on the variables passed into it.
+    \item Eg. $x^2>10$ is true if x=4, but false if x=3.
+    \item When creating a predicate, need to be explicit about types of variables and assertions.
+\end{itemize}
+\subsection{Other Quantifiers}
+\subsubsection{There Exists}
+\begin{itemize}
+    \item Any single element in the set that fulfills the requirements.
+    \item Denoted with $\exists$.
+\end{itemize}
+\subsubsection{For All}
+\begin{itemize}
+    \item Every element within the given set.
+    \item Denoted with $\forall$.
+\end{itemize}
+\subsubsection{Unique Exists}
+\begin{itemize}
+    \item A single element within the given set, which is the ONLY one that fulfills the requirements.
+    \item Highly unlikely to show up on an examlet.
+\end{itemize}
+\subsection{Notation}
+\begin{itemize}
+    \item Mathematical notation has a strict template: quantifier, variable + domain, predicate.
+    \item Can also be expressed in simple English terms.
+    \item Eg. $\forall x \in \mathbb{R}, x^2+3\geq 0$ or "for all values of x in the real numbers, $x^2+3\geq 0$".
+\end{itemize}
+\subsection{Useful Notation}
+\begin{itemize}
+    \item Can also tie together multiple claims if two variables have the same type.
+    \item Eg. $\forall x, y \in \mathbb{Z}, x + y \geq x$.
+    \item In this case, x and y don't have to be different - both are independent arbitrary values.
+    \item Can also utilize contrapositive in the case of the predicate.
+\end{itemize}
+\subsection{Notation for 2D Points}
+Can do any of the two:
+\begin{itemize}
+    \item Create a new 2D pair and refer to it later.
+    \item Create two elements.
+\end{itemize}
+\subsection{Negating Statements with Quantifiers}
+To negate a statement:
+\begin{enumerate}
+    \item Invert the quantifier (exists becomes for all, and vice versa).
+    \item Negate the predicate/implies statement.
+\end{enumerate}
+\subsection{Binding and Scope}
+\begin{itemize}
+    \item A quantifier binds the variable it defines.
+    \item After a variable is not bound, it's considered free.
+    \item If a variable is free, it should be considered invalid.
+\end{itemize}

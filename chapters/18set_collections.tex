@@ -1,0 +1,73 @@
+\begin{itemize}
+    \item Most sets previously contained atomic elements (numbers, strings, tuples).
+    \item Sets can also contain other sets.
+    \item \hl{Collection}: A set that contains other sets.
+\end{itemize}
+
+\subsection{Sets Containing Sets}
+\begin{itemize}
+    \item Happens when we need to get subsets of another set.
+    \item Can divide a set into an amount of (non)overlapping subsets.
+    \item If a non-overlapping set of subsets is the domain of a function, each subset results in an an output. 
+\end{itemize}
+
+\subsubsection{Cardinality}
+\begin{itemize}
+    \item The cardinality of a set is the amount of elements in the set itself, not in its subsets.
+    \item The empty set can be put in another set, and it counts as an element.
+\end{itemize}
+
+\subsection{Powersets and Set-Valued Functions}
+\begin{itemize}
+    \item Powerset of A contains ALL subsets of A (including empty set).
+    \item Denote a powerset with $\mathbb{P}(A)$.
+    \item Powerset of A contains $2^n$ elements, if A has n elements.
+    \item Use powersets when a function returns MULTIPLE values, and hence consistency is important.
+    \item Are useful for defining the domains of above-mentioned functions.
+\end{itemize}
+
+\subsection{Partitions}
+\begin{itemize}
+    \item Division of a base set A into non-overlapping subsets.
+    \item Corresponds to equivalence reactions (and vice-versa).
+    \item Three requirements for a partition of A:
+    \begin{enumerate}
+        \item Elements put together cover all of A.
+        \item No empty set in partition.
+        \item No overlap within elements of partition sets.
+    \end{enumerate}
+\end{itemize}
+
+\subsection{Combinations}
+\subsubsection{Combinations}
+\begin{itemize}
+    \item Combinations happen when we have an n-element set, from which we need all subsets of size k.
+    \item \hl{K-Combination}: Subset of size k.
+    \item Care about order in a permutation, but not in a combination.
+\end{itemize}
+
+\subsubsection{Equations}
+\begin{itemize}
+    \item Choose k elements without an order: $\frac{n!}{(n-k)!}$
+    \item Choose k elements in order (AKA binomial coefficient): $C(n,k)={n \choose k}=\frac{n!}{k!(n-k)!}$
+    \item Note that this is defined if $ n \geq k \geq 0 $
+\end{itemize}
+
+\subsection{Applying the Combinations Formula}
+\begin{itemize}
+    \item Used to select a set of locations and assign values.
+    \item Might need to apply it multiple times to generate the correct answer.
+\end{itemize}
+
+\subsection{Combinations with Repetition}
+\begin{itemize}
+    \item Need a clever way to count the amount of possibilities with multiple groups.
+    \item Replace each item with a star, and find amount of places you can put the separator.
+    \item To choose k objects from a list of size n: ${{k + n - 1} \choose {n - 1}} = {{k + n - 1} \choose {k}}$ 
+\end{itemize}
+
+\subsection{Identities for Binomial Coefficients}
+\begin{itemize}
+    \item ${n \choose k}={n \choose {n-k}}$
+    \item ${{n+1} \choose k} = {n \choose k} + {n \choose {k-1}}$
+\end{itemize}

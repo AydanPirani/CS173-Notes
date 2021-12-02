@@ -1,0 +1,122 @@
+\subsection{Sets}
+\subsubsection{Important Sets}
+The following sets are very commonly used when it comes to numerical analysis - make sure to memorize the sets and understand how they work conceptually.
+\begin{itemize}
+    \item \hl{Integers}: $\mathbb{Z}=\{...,-3,-2,-1,0,1,2,3,...\}$
+    \item \hl{Natural Numbers} (non-negative integers): $\mathbb{N}=\{0,1,2,3...\}$
+    \item \hl{Positive Integers}: $\mathbb{Z}^+=\{1,2,3,...\}$
+    \item \hl{Real Numbers} (all rationals and irrationals): $\mathbb{R}$
+    \item \hl{Rational Numbers} (all numbers of the form $\frac{p}{q}$, where p and q are integers): $\mathbb{Q}$ 
+    \item \hl{Complex Numbers} (of the form $a+bi$, where a and b are reals and $i=\sqrt{-1}$): $\mathbb{C}$
+\end{itemize}
+
+\subsubsection{Things to Know}
+\begin{itemize}
+    \item Zero is not included in non-positive or non-negative.
+    \item Natural numbers include zero.
+    \item Real numbers include integers, so not necessary for a real to have a decimal.
+    \item We denote that x is an element of the set A with: $x\in A$
+    \item MAKE SURE TO LOOK AT THE TYPES OF YOUR VARIABLES.
+\end{itemize}
+
+\subsubsection{Intervals}
+When working with a lot of numbers in a range, intervals help select a large amount of consecutive elements. They're denoted as such:
+\begin{itemize}
+    \item Closed Interval (include both endpoints): $[a,b]$
+    \item Open Interval (include no endpoints): $(a,b)$
+    \item Half-Open Intervals (include one endpoint): $(a,b]$ or $[a,b)$
+\end{itemize}
+
+\subsection{Pairs of Reals}
+
+\begin{itemize}
+    \item A pair of reals is a special way of denoting two real numbers that go together.
+    \item A pair of reals is denoted by (x,y).
+    \item The SET of all pairs of reals is denoted by $\mathbb{R}^2$.
+    \item Before working with pairs, you need to understand what each point in the pair represents.
+\end{itemize}
+This concept also applies for containers of $n$ dimensions, and the set of all such containers is represented as $\mathbb{R}^n$.
+\subsection{Exponentials and Logs}
+\subsubsection{Exponents}
+\begin{itemize}
+    \item An exponent is an abbreviated notation for repeated multiplication. Eg. $a\times a \times a = a^3$.
+    \item Hard to define exponents for fractional or decimal powers, but we assume that it holds.
+\end{itemize}
+\subsubsection{Special Exponent Cases}
+The following illustrate some special exponent cases, make sure to memorize these:
+\begin{itemize}
+    \item $x^0=1$
+    \item $x^0.5=\sqrt{x}$
+    \item $x^{-n}=\frac{1}{x^n}$
+\end{itemize}
+\subsubsection{Exponent Manipulation}
+The following illustrate important exponent rules, make sure to memorize these:
+\begin{itemize}
+    \item $x^ax^b=x^{a+b}$
+    \item $x^ay^a=(xy)^a$
+    \item $(x^a)^b=x^ab$
+    \item $x^(a^b)\neq (x^a)^b$
+\end{itemize}
+\subsubsection{Logarithms}
+If we have an exponential equation $y=x^a$, then we can invert this to $y=\log_a{x}$. In most cases, a lack of a base indicates that the default base is 2.
+\subsubsection{Logarithm Manipulation}
+The following illustrate some important logarithm rules, make sure to memorize these:
+\begin{itemize}
+    \item $b^{\log_b{x}}=x$
+    \item $\log_b{xy}=\log_b{x}+\log_b{y}$
+    \item $\log_b{x^y}=y\log_b{x}$
+\end{itemize}
+\subsubsection{Change of Base Formula}
+\begin{itemize}
+    \item Change of Base Formula: $\log_b{x} = \log_b{a}\log_a{x}$
+    \item To apply it correctly, choose a and b such that $\log_b{a}$ is greater or less than 1.
+    \item Note that both logarithms are merely different by a constant, which gets dropped later on.
+\end{itemize}
+\subsection{Some Handy Functions}
+\subsubsection{Factorials}
+\begin{itemize}
+    \item Defined as the product of the first n numbers.
+    \item $n!=1\times2\times3\times...\times(n-1)\times n$
+    \item Note that $0!$ is predefined as 1.
+\end{itemize}
+\subsubsection{Permutations}
+\begin{itemize}
+    \item Defined as the amount of ways to select n objects from a set in any order.
+    \item Permutations ("n choose k"): $\frac{n!}{k!(n-k)!}$
+    \item Note that this formula requires the set to contain only UNIQUE objects.
+\end{itemize}
+
+\subsubsection{Max/Min}
+\begin{itemize}
+    \item Returns the max and min of their inputs.
+    \item $max(2,7) = 7$.
+\end{itemize}
+
+\subsubsection{Floor/Ceiling}
+\begin{itemize}
+    \item Floor ($\lfloor x\rfloor$) rounds a real downwards.
+    \item Ceiling ($\lceil x\rceil$) rounds upwards.
+    \item Also applies for negative numbers.
+\end{itemize}
+
+\begin{tabular}{ccc}
+    Number & $\lfloor x\rfloor$ & $\lceil x\rceil$ \\
+    -1.5 & -2 & -1 \\
+    -1 & -1 & -1 \\
+    1 & 1 & 1 \\
+    1.5 & 2 & 2 \\
+\end{tabular}
+
+% \subsection{Summations}
+% \subsubsection{Summations}
+% \begin{itemize}
+%     \item Given a function f(x), the summation is the sum of various outputs for a range of inputs.
+%     \item $\sum_{i=0}^n{f(i)} = f(0)+f(1)+f(2)+...+f(n-1)+f(n)$
+% \end{itemize}
+% \subsubsection{Special Summations}
+% Some summations have a closed form, meaning that you can calculate their value if you know the bounds and the function. Know the following closed forms: 
+% \begin{itemize}
+%     \item $\sum_{i=0}^{n}{a^i}=\frac{a^{n+1}-1}{a-1}$
+%     \item $\sum_{i=0}^{n}{n}=\frac{n(n+1)}{2}$
+% \end{itemize}
+% Note that changing the bounds on the summation would also have an impact on the closed form.
