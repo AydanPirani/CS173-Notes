@@ -1,1 +1,71 @@
-Number Theory
+\subsection{Factors and Multiples}
+\begin{itemize}
+    \item a divides b if $a=bn$, for any integer n.
+    \item In this case: \begin{itemize}
+        \item a is a factor of b
+        \item b is a multiple of a
+    \end{itemize}
+    \item Can express "a divides b" as $a|b$.
+    \item NOTE: the "smaller" number goes on the left, not the right.
+\end{itemize}
+NOTE: An integer p is even iff $2|p$.
+
+\stepcounter{subsection}
+
+\subsection{Stay in the Set}
+\begin{itemize}
+    \item Don't introduce rationals if working with ints!
+\end{itemize}
+
+\subsection{Prime Numbers}
+\begin{itemize}
+    \item p ($p\geq2$)is prime iff the only positive factors of p are p and 1, else it's composite.
+    \item Prime Factorization: Expressing any integer p as the product of only prime numbers. 
+\end{itemize}
+
+\subsection{GCD and LCM}
+\subsubsection{GCD}
+\begin{itemize}
+    \item \hl{Common Divisor}: any value that divides 2 integers
+    \item \hl{Greatest Common Divisor}: largest common divisor of two integers.
+    \item Can express a GCD as gcd(a,b).
+    \item Can calculate the GCD by extracting common factors from the prime factorization.
+\end{itemize}
+\subsubsection{LCM}
+\begin{itemize}
+    \item Smallest value possible such that $a|c$ and $b|c$.
+    \item Can be found with this formula: $lcm(a,b) = \frac{ab}{gcd(a,b)}$.
+    \item \hl{Relatively Prime}: When two integers have no shared common divisors.
+\end{itemize}
+
+\subsection{The Division Algorithm}
+For any integers a and b, there are unique integers q and r such that $a=bq+r$.
+
+\subsection{Euclidean Algorithm}
+Keep doing this algorithm: \\
+\textit{gcd(a,b): \\
+\indent x = a \\
+\indent y = b \\
+\indent while y $>$ 0: \\
+\indent\indent r = remainder(x, y) \\
+\indent\indent x = y \\
+\indent\indent y = r \\
+\indent return x \\}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+
+\subsection{Congruence mod K}
+\begin{itemize}
+    \item Two integers are congruent mod k if they differ by a value of k.
+    \item If k is any positive integer, $a\equiv b (mod k)$ iff $k|(a-b)$. 
+\end{itemize}
+
+\stepcounter{subsection}
+
+\subsection{Equivalence Classes}
+\begin{itemize}
+    \item \hl{Congruence Class/Equivalence Class}: Set of all integers mod k.
+    \item Eg. in congruence mod 7: [3] = \{..., -11, -4, 3, 10, 17, ...\}
+    \item Generally only use integers from 0 to k-1 to name these classes.
+\end{itemize}
