@@ -1,1 +1,42 @@
-Funcions and Onto
+\subsection{Functions}
+\begin{itemize}
+    \item Function F maps items from set A to set B.
+    \item A is the \hl{domain}, and B is the \hl{co-domain}.
+    \item This is denoted in the \hl{type signature}: $f:A \rightarrow B$
+    \item If x is an element of A, then f(x) is the \hl{image} of x.
+\end{itemize}
+
+\subsection{When Are Functions Equal}
+\begin{itemize}
+    \item Must assign the same inputs to the same outputs.
+    \item Must also have the same type signatures.
+\end{itemize}
+
+\subsection{What Isn't a Function?}
+\begin{itemize}
+    \item An input has no output.
+    \item An input has multiple outputs.
+\end{itemize}
+
+\subsection{Images and Onto}
+\begin{itemize}
+    \item Image: $\{f(x), x \in A\}$ (all f(x) for x in A).
+    \item A function is \hl{onto} if its co-domain IS its image.
+    \item To prove: generate a representative output and find its pre-image.
+    \item Mathematical Def of Onto : $\forall y \in B, \exists x \in A, f(x) = y$.
+\end{itemize}
+
+\stepcounter{subsection}
+
+\subsection{Negating Onto}
+\begin{itemize}
+    \item Start out with negation: $\neg (\forall y \in B, \exists x \in A, f(x) = y$).
+    \item End up with this statement: $\exists y \in B, \forall x \in A, f(x) \neq y$.
+    \item In other words, there's an output that doesn't have an input.
+\end{itemize}
+
+\subsection{Nested Qualifiers}
+\begin{itemize}
+    \item Need to be careful with nested qualifiers.
+    \item Easy to mess up order, with existential and universal qualifiers.
+\end{itemize}

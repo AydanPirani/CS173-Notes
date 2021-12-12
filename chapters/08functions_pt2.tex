@@ -1,1 +1,24 @@
-Functions and One-To-One
+\subsection{One-To-One}
+\begin{itemize}
+    \item A function is \hl{one-to-one} if it maps each input to only one output.
+    \item Also depends on the type signature (eg. absolute value of x on integers vs. naturals).
+    \item Mathematical Def: $\forall x, y \in A, x\neq y \rightarrow f(x) \neq f(y)$ OR $\forall x, y \in A, f(x)=f(y)\rightarrow x=y$
+\end{itemize}
+
+\subsection{Bijections}
+\begin{itemize}
+    \item A function is a bijection if it's one-to-one and onto.
+    \item In this case, both the domain and the co-domain are the same size.
+\end{itemize}
+
+\subsection{Pidgeonhole Principle}
+\begin{itemize}
+    \item If we have n objects and k labels, then multiple objects must have the same label if n $>$ k.
+    \item Often tricky to implement, but useful when it comes to "packaging".
+\end{itemize}
+
+\subsection{Permutations}
+\begin{itemize}
+    \item To make an ordered choice of k objects from a set of n: $P(n, k) = \frac{n!}{(n-k)!}$
+    \item Represents the number of one-to-one functions from a set of k objects to a set of n objects.
+\end{itemize}
