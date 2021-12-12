@@ -1,1 +1,64 @@
-Sets
+\subsection{Sets}
+\begin{itemize}
+    \item Sets are unordered collections of objects.
+    \item Items in a set are called elements or members.
+    \item Three ways to define a set: \begin{itemize}
+        \item Mathematical English (all integers between 3 and 7, inclusive).
+        \item List (\{3,4,5,6,7\})
+        \item Set Builder Notation ($\{x\in Z, 3\leq x \leq 7\}$)
+    \end{itemize}
+    \item Note that the comma (may be replaced with $|$) in set builder notation indicates a constant.
+\end{itemize}
+
+\subsection{Things to be Careful About}
+\begin{itemize}
+    \item Set is unordered and unique, so \{3, 2, 1\} = \{1, 2, 3\}.
+    \item No duplicates in sets, so \{3, 2, 1, 2\} = \{1, 2, 3\}.
+    \item Note that sets aren't tuples (ordered non-unique collections), so use \{\} and not ().
+    \item Sets can be empty ($\emptyset$) or have a single value.
+    \item Sets can contain objects of multiple types.
+\end{itemize}
+
+\subsection{Cardinality, Inclusion}
+\begin{itemize}
+    \item \hl{Cardinality}: Amount of (unique) objects in a set.
+    \item Subset: All elements in A are also in B, denoted by $A \subseteq B$.
+    \item Proper Subset: Subset but both sets must be different, denoted by $ A \subset B$.
+\end{itemize}
+
+\subsection{Vacuous Truth}
+\begin{itemize}
+    \item Happens when a statement is technically true by definition, but not actually true.
+    \item Eg. is an empty set a subset of A? Yes (all elements in empty set are in A) but also no.
+\end{itemize}
+
+\subsection{Set Operations}
+\begin{itemize}
+    \item Intersection($\cap$): All elements that exist in BOTH sets. If intersection yields empty set, then both sets are disjoint.
+    \item Union($\cup$): Set of all unique elements in both sets combined.
+    \item Set Difference($-$): Set of all elements in the first set but not in the second.
+    \item Cartesian Product ($\times$): Set of all 2D-tuples, containing combinations of elements from both sets.
+\end{itemize}
+
+\stepcounter{subsection}
+
+\subsection{Size of Set Union}
+\begin{itemize}
+    \item Inclusion-Exclusion Principle: $|A \cup B| = |A| + |B| - |A \cap B|$
+    \item Can extend this idea to multiple sets (2+).
+\end{itemize}
+
+\subsection{Product Rule}
+\begin{itemize}
+    \item Very intuitive method to determine cardinality of Cartesian product.
+    \item $|A \times B| = |A| \times |B|$
+\end{itemize}
+
+\stepcounter{subsection}
+
+\subsection{Proving Facts About Set Inclusion}
+\begin{itemize}
+    \item Start with a representative element from A.
+    \item Perform algebra to show that A exists in B.
+    \item Conclude by saying that the claim has been proven.
+\end{itemize}
