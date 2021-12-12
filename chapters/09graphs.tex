@@ -1,1 +1,85 @@
-Graphs
+\subsection{Graphs}
+\begin{itemize}
+    \item Consists of a set of nodes V and a set of edges E.
+    \item Two nodes connected by an edge are \hl{neighbors} or \hl{adjacent}.
+    \item Edges can be \hl{directed} or \hl{undirected} (we'll assume undirected).
+    \item Some graphs might have \hl{multiple edges} or \hl{loops}.
+    \item \hl{Simple Graph}: No multiple edges, no loop (will be norm for this class).
+\end{itemize}
+
+\subsection{Degrees}
+\begin{itemize}
+    \item deg(v) is the total number of edges with v as an endpoint (self-loops count twice).
+    \item Sum of all degrees = 2 $\times$ number of edges.
+\end{itemize}
+
+\subsection{Complete Graphs}
+\begin{itemize}
+    \item Graphs in which every node is connected to every other node.
+    \item Denoted by $K_n$.
+    \item Total Edges: $\frac{n(n-1)}{2}$
+\end{itemize}
+
+\subsection{Cycle Graphs and Wheels}
+\subsubsection{Cycle Graphs}
+\begin{itemize}
+    \item Circular graph in which each node has only 2 neighbors.
+    \item Denoted by $C_n$.
+    \item Total edges: $n$
+\end{itemize}
+\subsubsection{Wheels}
+\begin{itemize}
+    \item Like a cycle graph, but there's a "hub" in the center.
+    \item Denoted by $W_n$.
+    \item Total edges: $2n$.
+\end{itemize}
+
+\subsection{Isomorphism}
+\begin{itemize}
+    \item Isomorphism: Function from nodes in Graph A to nodes in Graph B.
+    \item Graphs are isomorphic if there's an isomorphism from A to B.
+    \item To prove that graphs aren't isomorphic, find a feature that's different.
+\end{itemize}
+
+\subsection{Subgraphs}
+\begin{itemize}
+    \item \hl{Subgraph}: Nodes are a subset of the main graph, and so are edges.
+    \item If two graphs are isomorphic, then every subgraph must have a counter.
+\end{itemize}
+
+\subsection{Paths, Walks, and Cycles}
+\begin{itemize}
+    \item Walk is a sequence of nodes and edges (generally just one) from node a to node b. 
+    \begin{itemize}
+        \item \hl{Closed}: Starting node and ending node is the same, otherwise \hl{open}.
+    \end{itemize}
+    \item \hl{Path}: A walk in which no nodes are re-used.
+    \item \hl{Cycle}: Closed walk with 3+ nodes, in which no node is used more than once.
+    \item Can create a path from a walk by pruning nodes.
+    \item \hl{Acyclic}: Graph has no cycles in it.
+\end{itemize}
+
+\subsection{Connectivity}
+\begin{itemize}
+    \item \hl{Connected}: Walk exists between every pair of nodes in a graph.
+    \item \hl{Connected Components}: Amount of largest possible sets of connected nodes.
+    \item \hl{Cut Edge}: Edge that would break a connected component into 2 if removed.
+\end{itemize}
+
+\subsection{Distances}
+\begin{itemize}
+    \item d(a,b) is the length of the shortest path from a to b.
+    \item Diameter: maximum distance between any pair of nodes in the graph.
+\end{itemize}
+
+\subsection{Euler Circuit}
+\begin{itemize}
+    \item Closed walk that uses each edge of the graph once.
+    \item Requires a connected graph and each node to have even degree.
+\end{itemize}
+
+\subsection{Bipartite Graph}
+\begin{itemize}
+    \item Bipartite if we can split V into two subsets such that every node in $V_1$ connects only to nodes in $V_2$.
+    \item No edges connecting nodes of 1 set to nodes in the same set.
+\end{itemize}
