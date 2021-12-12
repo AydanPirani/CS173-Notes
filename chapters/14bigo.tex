@@ -1,1 +1,33 @@
-Big-O
+\subsection{Running Times of Programs}
+\begin{itemize}
+    \item Need a way to see how well a program runs.
+    \item Can't use time, because machines are always getting better and not uniform.
+    \item Instead, we abstract away constants and stick to input-growth time.
+\end{itemize}
+
+\subsection{Asymptotic Relationships}
+\begin{itemize}
+    \item We only look at the leading term of the polynomial.
+    \item f and g are asympotically similar iff $\lim_{x\rightarrow\infty}{\frac{f(x)}{g(x)}} = c$, else f is smaller.
+\end{itemize}
+
+\subsection{Ordering Primitive Functions}
+\begin{itemize}
+    \item SMALLEST
+    \item Constant Functions
+    \item Logarithms
+    \item Polynomials (from smaller degree to higher)
+    \item Exponents (from smaller degree to higher)
+    \item Factorials
+    \item LARGEST
+\end{itemize}
+
+\subsection{The Dominant Term Method}
+\begin{itemize}
+    \item Can simply neglect the non-dominant terms and constants: compare only dominant terms.
+\end{itemize}
+
+\subsection{Big-O}
+\begin{itemize}
+    \item Places an upper bound on a function f(x), for all $x\geq k$.
+\end{itemize}
