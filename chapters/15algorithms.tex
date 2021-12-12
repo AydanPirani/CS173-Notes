@@ -1,1 +1,54 @@
-Algorithms
+\subsection{Introduction}
+\begin{itemize}
+    \item Can figure out Big-O runtime of algorithms
+\end{itemize}
+
+\subsection{Basic Data Structures}
+\begin{itemize}
+    \item Array: O(1) access, O(N) modifications to length
+    \item Linked List: O(N) access, O(1) modifications at start/end, O(N) elsewhere.
+\end{itemize}
+
+\subsection{Nested Loops}
+\begin{itemize}
+    \item Each loop takes O(N) time.
+    \item Adding a nested loop adds a power to the N.
+    \item Eg. a for loop in a for loop is $O(N^2)$.
+\end{itemize}
+
+\subsection{A Connected Component Algorithm}
+\begin{itemize}
+    \item Gets nodes in the same connected component.
+    \item Traverses nodes and edges, so it's O(N+M).
+\end{itemize}
+
+\subsection{Binary Search}
+\begin{itemize}
+    \item Splits a sorted range into two, and gets middle.
+    \item Operates based on the middle value.
+    \item Time Complexity: O(logN)
+\end{itemize}
+
+\subsection{Merging Two Lists}
+\begin{itemize}
+    \item Creates a new list, but has to traverse both lists.
+    \item Time Complexity: O(N).
+\end{itemize}
+
+\subsection{Mergesort}
+\begin{itemize}
+    \item Splits up a list into 2, then sorts both and merges.
+    \item Time Complexity: O(NlogN).
+\end{itemize}
+
+\subsection{Tower of Hanoi}
+\begin{itemize}
+    \item Needs to move discs from 1 tower to another.
+    \item Time Complexity: $O(2^N)$.
+\end{itemize}
+
+\subsection{Multiplying Big Integers}
+\begin{itemize}
+    \item Karatsuba's Algorithm for enhanced multiplication.
+    \item Time Complexity: $O(N^{\log_2{3}})$
+\end{itemize}
